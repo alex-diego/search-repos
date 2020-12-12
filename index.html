@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Search Repos | Github</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Busque por repos do Github</h1>
+      <div class="header__nav">
+        <input 
+          type="text" 
+          class="header__search"
+          id="js-search_input" 
+          placeholder="nome do usuario"
+        />
+        <a class="header__btn" id="js-search_btn">
+          <img 
+            src="./images/search-icon.svg" 
+            alt="Buscar" class="header__icon"
+          />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container">
+      <h1 class="main__title" id="js-main_title"></h1>
+      <div class="main__grid" id="js-main_grid">
+
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
