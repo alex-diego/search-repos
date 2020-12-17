@@ -41,6 +41,10 @@ body {
   margin-right: 10px;
 }
 
+.header__icon {
+  cursor: pointer;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -60,7 +64,7 @@ body {
 
 .main__grid {
   width: 100%;
-  margin-top: 24px;
+  margin: 24px 0;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -126,4 +130,27 @@ body {
 .card__languages {
   color: purple;
   font-weight: bold;
+}
+
+/*CONTROLS*/
+
+.main__controls {
+  display: none;
+
+  width: 20%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.main__controls.on {
+  display: flex;
+}
+
+.controls__btn {
+  padding: 5px 10px;
+  background-color:  rgb(29, 24, 24);
+  color: #fff;
+  text-decoration: none;
+
+  cursor: pointer;
 }
